@@ -12,7 +12,7 @@ client = OpenAI(
 es_client = Elasticsearch('http://localhost:9200') 
 
 
-def elastic_search(query, index_name = "course-questions"):
+def elastic_search(query, index_name = "course-question"):
     search_query = {
         "size": 5,
         "query": {
